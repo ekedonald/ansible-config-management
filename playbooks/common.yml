@@ -3,10 +3,16 @@
   hosts: webservers, nfs, db
   become: true
   tasks:
-    - name: ensure wireshark is at the latest version
+    - name: install nginx
       yum:
-        name: wireshark
+        name: nginx
         state: latest
+    - name: start nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+        
    
 
 - name: update LB server
@@ -17,7 +23,7 @@
       apt: 
         update_cache: yes
 
-    - name: ensure wireshark is at the latest version
+    - name: install nginx
       apt:
-        name: wireshark
+        name: nginx
         state: latest
