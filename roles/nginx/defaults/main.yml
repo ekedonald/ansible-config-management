@@ -6,6 +6,7 @@ nginx_default_release: ""
 # Used only for Redhat installation, enables source Nginx repo.
 nginx_yum_repo_enabled: true
 
+
 # Use the official Nginx PPA for Ubuntu, and the version to use if so.
 nginx_ppa_use: false
 nginx_ppa_version: stable
@@ -96,5 +97,5 @@ nginx_log_format: |-
 #load_balancer_is_required: false
 
 #IP mapping for webservers
-web1: 3.85.167.188
-web2: 54.83.76.84
+#web1: 3.85.167.188
+#web2: 54.83.76.84
