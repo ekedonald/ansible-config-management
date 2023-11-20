@@ -6,16 +6,6 @@
   tags:
     - always
 
-- name: import static assignments
-  import_playbook: ../static-assignments/common.yml 
-
-- name: import webservers file
-  import_playbook: ../static-assignments/webservers.yml
-
-
 - name: Loadbalancers assignment
   import_playbook: ../static-assignments/loadbalancers.yml
-  when: load_balancer_is_required
-
-- name: import database file
-  import_playbook: ../static-assignments/database.yml
+  when: load_balancer_is_required 
