@@ -3,7 +3,9 @@
 
 - name: Include dynamic variables 
   import_playbook: ../static-assignments/common.yml 
-  include: ../dynamic-assignments/env-vars.yml
+  
+- name: Include dynamic  
+  import_playbook: ../dynamic-assignments/env-vars.yml
   tags:
     - always
 
