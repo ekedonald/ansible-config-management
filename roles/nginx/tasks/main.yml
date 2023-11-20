@@ -43,6 +43,7 @@
 
 - name: Ensure nginx service is running as configured.
   service:
+    become: true
     name: nginx
-    state: "{{ nginx_service_state }}"
-    enabled: "{{ nginx_service_enabled }}"
+    state: present
+    enabled: true
