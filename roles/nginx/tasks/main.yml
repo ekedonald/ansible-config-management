@@ -45,5 +45,5 @@
   service:
     become: true
     name: nginx
-    state: present
-    enabled: true
+    state: "{{ nginx_service_state }}"
+    enabled: "{{ nginx_service_enabled }}"
