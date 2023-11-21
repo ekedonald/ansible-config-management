@@ -8,10 +8,8 @@
 - name: Include  
   import_playbook: ../dynamic-assignments/env-vars.yml
   
-
 - name: import webservers file
   import_playbook: ../static-assignments/webservers.yml
-
 
 - name: Loadbalancers assignment
   import_playbook: ../static-assignments/loadbalancers.yml
