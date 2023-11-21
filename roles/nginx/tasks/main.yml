@@ -47,4 +47,4 @@
   service:
     name: nginx
     state: "{{ nginx_service_state }}"
-    enabled: true
+    enabled: false
