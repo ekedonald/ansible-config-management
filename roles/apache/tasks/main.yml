@@ -44,4 +44,4 @@
   service:
     name: "{{ apache_service }}"
     state: "{{ apache_state }}"
-    enabled: "{{ enable_apache_lb }}"
+    enabled: "{{ apache_enabled }}"
